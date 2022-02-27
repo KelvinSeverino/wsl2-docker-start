@@ -73,7 +73,7 @@
 
 Após executado ultimo passo, pegar a Porta do container e acessar no navegador em localhost:porta
 
-#### Comandos Docker
+#### Comandos Docker docker run -P -d -p 8000:80 httpd
 - Listar containers
 ```bash
     sudo docker ps
@@ -102,4 +102,10 @@ Após executado ultimo passo, pegar a Porta do container e acessar no navegador 
 - Listar imagens dos container
 ```bash
     sudo docker images
+```
+
+#### Portas
+- Executando e informando porta do container (porta_host:porta_container)
+```bash
+    sudo docker run -P -d -p 8000:80 CONTAINER_ID
 ```
