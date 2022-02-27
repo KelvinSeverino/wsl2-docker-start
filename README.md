@@ -109,3 +109,9 @@ Após executado ultimo passo, pegar a Porta do container e acessar no navegador 
 ```bash
     sudo docker run -P -d -p 8000:80 CONTAINER_ID
 ```
+
+#### Compartilhando Volumes
+- Executando e informando volume compartilhado do container (porta_host:porta_container / path_volume_host:path_volume_container)
+```bash
+    sudo docker run -P -d -p 8000:80 -v /docker/volume:/var/volume CONTAINER_ID
+```
