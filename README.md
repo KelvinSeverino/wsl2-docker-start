@@ -71,4 +71,35 @@
     sudo docker ps
 ```
 
-Após executado ultimo passo, pegar a Porta do container e acessar no navegador.
+Após executado ultimo passo, pegar a Porta do container e acessar no navegador em localhost:porta
+
+#### Comandos Docker
+- Listar containers
+```bash
+    sudo docker ps
+```
+
+- Renomear container
+```bash
+    sudo docker rename nome_antigo nome_novo
+```
+
+- Acessar container
+```bash
+    sudo docker attach CONTAINER_ID
+```
+
+- Executar comando no container e sair após fim do comando
+```bash
+    sudo docker exec CONTAINER_ID COMANDO -ef
+```
+
+- Parar container
+```bash
+    sudo docker stop CONTAINER_ID
+```
+
+- Listar imagens dos container
+```bash
+    sudo docker images
+```
