@@ -18,7 +18,7 @@ services:
       - 3306:3306
     #Caminho da pasta local para armazenar os dados (./ seria o caminho atual do arquivo docker-compose)
     volumes:
-      - ./db_data:/etc/mysql/conf.d
+      - ./db_data:/var/lib/mysql
 
   app:
     #Imagem de origem
