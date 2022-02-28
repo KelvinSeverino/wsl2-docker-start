@@ -29,6 +29,11 @@
     sudo docker images
 ```
 
+- Remover imagem
+```bash
+    sudo docker image rm -f CONTAINER_ID
+```
+
 ## Portas
 - Executando e informando porta do container (porta_host:porta_container)
 ```bash
