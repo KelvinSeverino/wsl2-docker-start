@@ -26,7 +26,7 @@
         - MARIADB_DATABASE=laravel
         #Porta de Comunicacao Local > Container
         ports:
-        - 8011:3306
+        - 3306:3306
         #Caminho da pasta local para armazenar os dados (./ seria o caminho atual do arquivo docker-compose)
         volumes:
         - ./db_data:/etc/mysql/conf.d
@@ -39,7 +39,7 @@
         - ./:/var/www/html
         #Porta de Comunicacao Local > Container
         ports:
-        - 8010:80
+        - 8000:80
         #Gera link de comunicacao com o database acima
         links:
         - db
