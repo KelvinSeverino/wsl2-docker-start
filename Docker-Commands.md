@@ -34,6 +34,17 @@
     sudo docker image rm -f CONTAINER_ID
 ```
 
+- Detela todos os containers incluindo os volumes em uso
+```bash
+    sudo docker rm -vf $(docker ps -aq)
+```
+
+- Deleta todas as imagens
+```bash
+    sudo docker rmi -f $(docker images -aq)
+```
+
+
 ## Portas
 - Executando e informando porta do container (porta_host:porta_container)
 ```bash
